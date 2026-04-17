@@ -1,13 +1,13 @@
 
 ---
 
-# 📌 FastAPI Background Job Processing System
+## 📌 FastAPI Background Job Processing System
 
 A backend service built with **FastAPI** that handles **asynchronous job processing with JWT authentication**, SQLite database, and job lifecycle tracking.
 
 ---
 
-# 🚀 Features
+## 🚀 Features
 
 * 🔐 JWT Authentication (Register/Login)
 * 🧾 Create background jobs
@@ -19,7 +19,7 @@ A backend service built with **FastAPI** that handles **asynchronous job process
 
 ---
 
-# 🏗️ Project Structure
+## 🏗️ Project Structure
 
 ```
 app/
@@ -47,7 +47,7 @@ app/
 
 ---
 
-# ⚙️ Tech Stack
+## ⚙️ Tech Stack
 
 * FastAPI
 * SQLite (SQLAlchemy)
@@ -57,9 +57,9 @@ app/
 
 ---
 
-# 🔧 Installation & Setup
+## 🔧 Installation & Setup
 
-## 1️⃣ Clone the repository
+### 1️⃣ Clone the repository
 
 ```bash
 git clone https://github.com/sasichintada/fastapi-job-system.git
@@ -68,7 +68,7 @@ cd fastapi-job-system
 
 ---
 
-## 2️⃣ Create virtual environment
+### 2️⃣ Create virtual environment
 
 ```bash
 python -m venv venv
@@ -76,7 +76,7 @@ python -m venv venv
 
 Activate it:
 
-### Windows:
+#### Windows:
 
 ```bash
 venv\Scripts\activate
@@ -84,7 +84,7 @@ venv\Scripts\activate
 
 ---
 
-## 3️⃣ Install dependencies
+### 3️⃣ Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -92,7 +92,7 @@ pip install -r requirements.txt
 
 ---
 
-## 4️⃣ Run the server
+### 4️⃣ Run the server
 
 ```bash
 uvicorn app.main:app --reload
@@ -100,7 +100,7 @@ uvicorn app.main:app --reload
 
 ---
 
-# 🌐 API Access
+## 🌐 API Access
 
 Once running, open:
 
@@ -109,15 +109,15 @@ Once running, open:
 
 ---
 
-# 🔐 Authentication Flow
+## 🔐 Authentication Flow
 
-## 1. Register User
+### 1. Register User
 
 ```
 POST /auth/register
 ```
 
-## 2. Login User
+### 2. Login User
 
 ```
 POST /auth/login
@@ -134,7 +134,7 @@ Response:
 
 ---
 
-## 3. Authorize in Swagger
+### 3. Authorize in Swagger
 
 Click **Authorize** and paste:
 
@@ -144,9 +144,9 @@ Bearer <your_token>
 
 ---
 
-# 🧾 Job APIs
+## 🧾 Job APIs
 
-## Create Job
+### Create Job
 
 ```
 POST /jobs/
@@ -162,7 +162,7 @@ Example:
 
 ---
 
-## Get All Jobs
+### Get All Jobs
 
 ```
 GET /jobs/
@@ -170,7 +170,7 @@ GET /jobs/
 
 ---
 
-## Get Job by ID
+### Get Job by ID
 
 ```
 GET /jobs/{job_id}
@@ -178,7 +178,7 @@ GET /jobs/{job_id}
 
 ---
 
-# 🔄 Job Lifecycle
+## 🔄 Job Lifecycle
 
 | Status      | Description    |
 | ----------- | -------------- |
@@ -188,7 +188,7 @@ GET /jobs/{job_id}
 
 ---
 
-# ⚡ How Background Processing Works
+## ⚡ How Background Processing Works
 
 * Job is created with `pending` status
 * System processes job in background
@@ -198,7 +198,7 @@ GET /jobs/{job_id}
 
 ---
 
-# 🧪 Testing
+## 🧪 Testing
 
 Use:
 
@@ -207,7 +207,7 @@ Use:
 
 ---
 
-# 📌 Example Workflow
+## 📌 Example Workflow
 
 1. Register user
 2. Login and get token
@@ -218,7 +218,7 @@ Use:
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Sasank Kumari Chintada**
 * GitHub: [@sasichintada](https://github.com/sasichintada)
